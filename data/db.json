@@ -1,7 +1,7 @@
 {
   "hostels": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Sri Srinivasa PG",
       "location": {
         "village": "Adibatla",
@@ -9,12 +9,12 @@
         "pincode": "501510",
         "landmark": "Adibatls PS"
       },
-      "available": 3,
+      "bedsAvailable": 3,
       "startingPrice": 6500,
       "contact": "1234567890"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Sri Venkateswara Grand",
       "location": {
         "village": "Adibatla",
@@ -22,12 +22,12 @@
         "pincode": "501510",
         "landmark": "TCS Office"
       },
-      "available": 4,
+      "bedsAvailable": 4,
       "startingPrice": 6500,
       "contact": "1234567890"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Sri Balaji Grand",
       "location": {
         "village": "Adibatla",
@@ -35,12 +35,12 @@
         "pincode": "501510",
         "landmark": "Telangana Chai"
       },
-      "available": 6,
+      "bedsAvailable": 6,
       "startingPrice": 6500,
       "contact": "1234567890"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Sri Balaji Grand",
       "location": {
         "village": "Adibatla",
@@ -48,12 +48,12 @@
         "pincode": "501510",
         "landmark": "Telangana Chai"
       },
-      "available": 6,
+      "bedsAvailable": 6,
       "startingPrice": 6500,
       "contact": "1234567890"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Sri Balaji Grand",
       "location": {
         "village": "Adibatla",
@@ -61,12 +61,12 @@
         "pincode": "501510",
         "landmark": "Telangana Chai"
       },
-      "available": 6,
+      "bedsAvailable": 6,
       "startingPrice": 6500,
       "contact": "1234567890"
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Sri Balaji Grand",
       "location": {
         "village": "Adibatla",
@@ -74,12 +74,12 @@
         "pincode": "501510",
         "landmark": "Telangana Chai"
       },
-      "available": 6,
+      "bedsAvailable": 6,
       "startingPrice": 6500,
       "contact": "1234567890"
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "Sri Balaji Grand",
       "location": {
         "village": "Adibatla",
@@ -87,12 +87,12 @@
         "pincode": "501510",
         "landmark": "Telangana Chai"
       },
-      "available": 6,
+      "bedsAvailable": 6,
       "startingPrice": 6500,
       "contact": "1234567890"
     },
     {
-      "id": 8,
+      "id": "8",
       "name": "Sri Balaji Grand",
       "location": {
         "village": "Adibatla",
@@ -100,9 +100,39 @@
         "pincode": "501510",
         "landmark": "Telangana Chai"
       },
-      "available": 6,
+      "bedsAvailable": 6,
       "startingPrice": 6500,
       "contact": "1234567890"
+    },
+    {
+      "id": 9,
+      "name": "pg",
+      "location": {
+        "village": "adibatls",
+        "city": "hyd",
+        "pincode": "501510",
+        "landmark": "adibatla ps"
+      },
+      "bedsAvailable": "3",
+      "startingPrice": "6500",
+      "contact": "1234567890"
+    }
+  ],
+  "faqs": [
+    {
+      "id": "1",
+      "question": "What is pg-finder?",
+      "answer": "pg-finder is a website that helps you find the best PG (paying guest) accommodation near your location. You can search for PGs by city, locality, gender, budget, amenities, and more."
+    },
+    {
+      "id": "2",
+      "question": "How can I see all the pg's that are bedsAvailable?",
+      "answer": "Simple, please click on the PG Hostels option in the nav bar and you will be redirected to the page where you can see all the pg's bedsAvailable."
+    },
+    {
+      "id": "3",
+      "question": "Why should I use PG Finder?",
+      "answer": "PG Finder helps you to find pleasant and comfortable PG Hostels at affordable and reasonable prices."
     }
   ]
 }
