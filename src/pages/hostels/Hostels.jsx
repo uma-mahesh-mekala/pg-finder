@@ -1,15 +1,20 @@
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, Link } from "react-router-dom";
 
 function createHostelElemet(props) {
   return (
-    <div className="hostel" key={props.id}>
+    <Link
+      to={`/hostels/${props.id.toString()}`}
+      key={props.id}
+      className="hostel"
+    >
       <h3>Hostle Name: {props.name}</h3>
-      <p>Village: {props.location.village}</p>
-      <p>city: {props.location.city}</p>
+      <p>Location: {props.address.location}</p>
+      <p>city: {props.address.city}</p>
       <p>Beds Available: {props.bedsAvailable}</p>
-    </div>
+    </Link>
   );
 }
+
 function Hostels() {
   const hostels = useLoaderData();
   return (
@@ -19,6 +24,10 @@ function Hostels() {
 
 async function hostelsLoader() {
   const res = await fetch("http://localhost:4000/hostels");
+
+  if (!res.ok) {
+    throw Error("Could not fetch hostels, please try again later.");
+  }
 
   return res.json();
 }

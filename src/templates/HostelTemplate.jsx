@@ -8,7 +8,7 @@ function HostelTemplate() {
         <i>Click on Add Hostle to add new Hostel</i>
       </div>
       <nav>
-        <NavLink index>Hostels</NavLink>
+        <NavLink to="/hostels/all">View All Hostels</NavLink>
         <NavLink to="new">Add Hostel</NavLink>
       </nav>
       <Outlet />

@@ -3,8 +3,8 @@
     {
       "id": "1",
       "name": "Sri Srinivasa PG",
-      "location": {
-        "village": "Adibatla",
+      "address": {
+        "location": "Adibatla",
         "city": "Hyderabad",
         "pincode": "501510",
         "landmark": "Adibatls PS"
@@ -16,8 +16,8 @@
     {
       "id": "2",
       "name": "Sri Venkateswara Grand",
-      "location": {
-        "village": "Adibatla",
+      "address": {
+        "location": "Adibatla",
         "city": "Hyderabad",
         "pincode": "501510",
         "landmark": "TCS Office"
@@ -29,8 +29,8 @@
     {
       "id": "3",
       "name": "Sri Balaji Grand",
-      "location": {
-        "village": "Adibatla",
+      "address": {
+        "location": "Adibatla",
         "city": "Hyderabad",
         "pincode": "501510",
         "landmark": "Telangana Chai"
@@ -42,8 +42,8 @@
     {
       "id": "4",
       "name": "Sri Balaji Grand",
-      "location": {
-        "village": "Adibatla",
+      "address": {
+        "location": "Adibatla",
         "city": "Hyderabad",
         "pincode": "501510",
         "landmark": "Telangana Chai"
@@ -55,8 +55,8 @@
     {
       "id": "5",
       "name": "Sri Balaji Grand",
-      "location": {
-        "village": "Adibatla",
+      "address": {
+        "location": "Adibatla",
         "city": "Hyderabad",
         "pincode": "501510",
         "landmark": "Telangana Chai"
@@ -68,8 +68,8 @@
     {
       "id": "6",
       "name": "Sri Balaji Grand",
-      "location": {
-        "village": "Adibatla",
+      "address": {
+        "location": "Adibatla",
         "city": "Hyderabad",
         "pincode": "501510",
         "landmark": "Telangana Chai"
@@ -81,8 +81,8 @@
     {
       "id": "7",
       "name": "Sri Balaji Grand",
-      "location": {
-        "village": "Adibatla",
+      "address": {
+        "location": "Adibatla",
         "city": "Hyderabad",
         "pincode": "501510",
         "landmark": "Telangana Chai"
@@ -94,8 +94,8 @@
     {
       "id": "8",
       "name": "Sri Balaji Grand",
-      "location": {
-        "village": "Adibatla",
+      "address": {
+        "location": "Adibatla",
         "city": "Hyderabad",
         "pincode": "501510",
         "landmark": "Telangana Chai"
@@ -105,10 +105,10 @@
       "contact": "1234567890"
     },
     {
-      "id": 9,
+      "id": "9",
       "name": "pg",
-      "location": {
-        "village": "adibatls",
+      "address": {
+        "location": "adibatla",
         "city": "hyd",
         "pincode": "501510",
         "landmark": "adibatla ps"

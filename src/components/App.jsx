@@ -18,6 +18,11 @@ import HostelForm, { hostelSubmitAction } from "../pages/hostels/HostelForm";
 import HostelDetail, {
   hostelDetailLoader,
 } from "../pages/hostels/HostelDetail";
+import {
+  HostelDetailsError,
+  HostelsError,
+  NewHostelDetailsError,
+} from "../pages/hostels/HostelsError";
 
 function App() {
   const router = createBrowserRouter(
@@ -30,17 +35,24 @@ function App() {
           <Route path="contact" element={<ContactForm />} />
         </Route>
         <Route path="hostels" element={<HostelTemplate />}>
-          <Route index element={<Hostels />} loader={hostelsLoader} />
+          <Route
+            path="all"
+            element={<Hostels />}
+            loader={hostelsLoader}
+            errorElement={<HostelsError />}
+          />
           <Route
             path="new"
             element={<HostelForm />}
             loader={hostelsLoader}
             action={hostelSubmitAction}
+            errorElement={<NewHostelDetailsError />}
           />
           <Route
-            path="hostel/:id"
+            path=":id"
             element={<HostelDetail />}
             loader={hostelDetailLoader}
+            errorElement={<HostelDetailsError />}
           />
         </Route>
 
