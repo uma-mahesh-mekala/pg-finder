@@ -1,4 +1,5 @@
 import { useLoaderData, Link } from "react-router-dom";
+import hostels from "../../data/hostels";
 
 function createHostelElemet(props) {
   return (
@@ -23,13 +24,9 @@ function Hostels() {
 }
 
 async function hostelsLoader() {
-  const res = await fetch("http://localhost:4000/hostels");
+  const res = hostels;
 
-  if (!res.ok) {
-    throw Error("Could not fetch hostels, please try again later.");
-  }
-
-  return res.json();
+  return res;
 }
 
 export default Hostels;

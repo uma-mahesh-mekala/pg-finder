@@ -1,15 +1,6 @@
 import { useLoaderData } from "react-router-dom";
+import faqs from "../../data/faqs";
 
-// function createFaqElemet(props) {
-//   return (
-//     <div className="faq" key={props.id}>
-//       <p>
-//         <b>{props.question}</b>
-//       </p>
-//       <p>{props.answer}</p>
-//     </div>
-//   );
-// }
 function Faq() {
   const faqs = useLoaderData();
   return (
@@ -30,9 +21,9 @@ function Faq() {
 }
 
 async function faqLoader() {
-  const res = await fetch("http://localhost:4000/faqs");
+  const res = faqs;
 
-  return res.json();
+  return res;
 }
 export default Faq;
 export { faqLoader };

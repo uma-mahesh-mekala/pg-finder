@@ -1,4 +1,6 @@
 import { Form, redirect } from "react-router-dom";
+import hostels from "../../data/hostels";
+
 function HostelForm() {
   return (
     <Form className="hostel-form" method="post">
@@ -18,6 +20,7 @@ function HostelForm() {
 async function hostelSubmitAction({ request }) {
   const formData = await request.formData();
   const hostelBody = {
+    id: hostels.length + 1,
     name: formData.get("name"),
     address: {
       location: formData.get("location"),
@@ -30,24 +33,7 @@ async function hostelSubmitAction({ request }) {
     contact: formData.get("contact"),
   };
 
-  const getHostels = await fetch("http://localhost:4000/hostels");
-  const hostels = await getHostels.json();
-
-  if (getHostels.ok) {
-    hostelBody.id = hostels.length + 1;
-    const url = "http://localhost:4000/hostels";
-    const res = await fetch(url, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(hostelBody),
-    });
-
-    if (!res.ok) {
-      throw Error("There was error adding the hostel");
-    }
-  }
+  hostels.push(hostelBody);
   return redirect("/hostels/all");
 }
 

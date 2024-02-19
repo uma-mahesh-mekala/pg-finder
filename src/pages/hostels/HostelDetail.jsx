@@ -1,4 +1,5 @@
 import { useLoaderData } from "react-router-dom";
+import hostels from "../../data/hostels";
 
 function HostelDetail() {
   const hostel = useLoaderData();
@@ -17,12 +18,12 @@ function HostelDetail() {
 }
 
 async function hostelDetailLoader({ params }) {
-  const res = await fetch("http://localhost:4000/hostels/" + params.id);
+  const res = hostels.find((hostel) => hostel.id === params.id);
 
-  if (!res.ok) {
+  if (!res) {
     throw Error("There was an Error Fetching Hostel Details");
   }
-  return res.json();
+  return res;
 }
 
 export default HostelDetail;

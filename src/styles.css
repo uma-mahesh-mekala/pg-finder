@@ -20,9 +20,10 @@ header {
 
 header nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
   padding: 15px;
-  gap: 20px;
+  /* gap: 20px; */
   background-color: #333333;
 }
 
@@ -30,16 +31,39 @@ header nav h1 {
   margin-right: auto;
 }
 
-header nav > a {
-  vertical-align: middle;
+header .nav-links {
+  display: flex;
+}
+header .nav-links > a {
+  /* vertical-align: middle;
   padding: 5px;
   text-decoration: none;
   font-size: large;
   border-radius: 5px;
+  background-color: #666666; */
+  display: block;
+  padding: 5px 10px;
+  margin: auto 10px;
+  text-decoration: none;
+  color: #ffffff;
   background-color: #666666;
+  border-radius: 5px;
 }
 
-header nav > a.active {
+.menu-toggle {
+  cursor: pointer;
+  margin-right: 10px;
+  display: none;
+}
+
+.menu-toggle .bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+}
+
+header .nav-links > a.active {
   background-color: white;
   color: black;
 }
@@ -96,7 +120,7 @@ p {
   display: flex;
   flex-direction: column;
   padding: 10px;
-  width: 25%;
+  width: 300px;
 }
 
 .contact-form input,
@@ -184,7 +208,6 @@ h3 {
 }
 
 .hostel-form > input {
-  width: 100%;
   padding: 10px;
   margin: 5px 0;
   border-radius: 5px;
@@ -223,4 +246,68 @@ h3 {
 .hostel-error,
 hostels-error {
   padding: 10px;
+}
+
+@media (max-width: 580px) {
+  .menu-toggle {
+    cursor: pointer;
+    margin-right: 10px;
+    display: block;
+  }
+
+  .menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+  }
+
+  header {
+    width: 100%;
+  }
+  header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    position: relative;
+  }
+
+  header nav .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    gap: 10px;
+    z-index: 100;
+    background-color: #333333;
+    transition: opacity 0.5s ease-in;
+    opacity: 1;
+  }
+
+  header nav.open .nav-links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hostel-form {
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hostel-form > input {
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 5px;
+    color: black;
+    font-weight: 500;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 100%;
+  }
 }
